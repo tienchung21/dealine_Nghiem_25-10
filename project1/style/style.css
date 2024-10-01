@@ -11,9 +11,9 @@
     background-color: rgb(255, 255, 255);
     position: fixed;
     width: 100%;
-    padding: 25px 50px;
-    position: relative;
+    padding: 25px 50px; 
     font-size: 15px;
+    top: 0px;
 
 }
 #nav{
@@ -59,22 +59,26 @@ li a{
     display: block;
 /* aduvip */
 }
-
+.home{
+    background: url(../style/img/anh-gai-xinh-deo-kinh-toc-ngang-vai.jpg) top center / cover no-repeat;
+   
+    padding-top: 50%;
+}
 .container{
-
+    margin-top: 80px;
+    height: 1000px;
 }
 html{
     font-family: Arial, Helvetica, sans-serif;
     
 }
 .footer{
-    height: 160px;
-    width: 100%;
-    background-color: black;
-    position: absolute;
-    bottom: 0px;
-    color: aliceblue;
-    padding: 65px 0px 65px 0px;
-    text-align: center;
+        height: 160px;
+        width: 100%;
+        background-color: black;
+        position: relative;
+        color: aliceblue;
+        padding: 65px 0px 65px 0px;
+        text-align: center;
 
 }
