@@ -312,7 +312,7 @@ margin: 0 280px;
     margin-right: 3px;
     font-size: 20px;
     color: rgb(255, 255, 255);
-    
+    /* border-radius: 10% 30% 50% 70%; */
 
 }
 .Portfolio-content > img{
@@ -580,9 +580,15 @@ opacity: 0.9;
     margin-left: 5px;
     z-index: 10;
     font-size: 20px;
-    border: 2px solid ;
-    border-radius: 2px;
-    
+    border: 2.5px solid #f0ebe4;
+    border-radius: 8px;
+    padding: 6px;
+    color: #f0ebe4;
+    transition: transform 0.9s ease;
+}
+.span-new-close:hover{
+    border-radius: 50% 50%;
+
 }
 .contact{
     position: relative;
@@ -632,44 +638,101 @@ opacity: 0.9;
     z-index: 1;
     padding: 50px;
     display: none;
+   
 }
 .contact-modal-form{
-    max-width: 150vh;
+    margin: auto;
     background-color: #f2f2f2;
     display: flex;
+    flex-direction: column;
+    
     align-items: center;
     justify-content: center;
+    max-width: 105vh;
+    min-height: 300px;
+    top: 0;
+    bottom: 0;
+    padding: 50px;
    
    
+}
+.contact-modal-form h1{
+    width: 100%;
+}
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+    max-height: 420px;
 }
 
 .col-1{
-    float: left;
+    
     width: 50%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 25px;
+}
+form > button,input{
+    width: 100%;
+    font-size: 15px;
+    margin: 20px 0px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    box-sizing: border-box;
 }
 .col-2{
-    float: right;
+ 
     width: 50%;
     padding: 10px;
+    max-height: 100%;
+    padding-left: 25px;
 }
 .col-2 >img{
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    
+    object-fit: cover;
 }
-.row-1 button{
+.row-1 > button{
     background-color: #f59309;
     color: #ffffff;
     display: block;
-    
+    width: 50%;
+    height: 56px;
+    padding: 13px 40px;
+    border: 1px solid #f59309;
+}
+.row-1 button:hover{
+    background: transparent;
+    color: #000 ;
 }
 
+.row-2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 .row-2 .col{
     clear: both;
     background-color: #000;
     color: #f2f2f2;
-    height: 100px;
-    width: 33.33%;
+    min-height: 163px;
+    width: 30%;
+   margin-top: 30px;
+   margin-bottom: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 25px;
    
-   
+}
+.row-2 .col span{
+    color: #f0ebe4;
+    padding: 5px;
+    font-size: 20px;
 }
 
 
