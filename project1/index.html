@@ -6,16 +6,29 @@
     <title>Document</title>
     <link rel="stylesheet" href="../project1/style/icon/themify-icons-font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="../project1/style/style.css">
-</head>
+    <link rel="stylesheet" href="../project1/style/style.js">
+    <script src="../project1/style/style.js">     </script>
+    <!-- bootrap -->
+<!--     
+   <link rel="stylesheet" href="../project1/style/bootstrap.min.css">
+   <script src="../project1/style/bootstrap.min.css"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head> -->
+
+
 <body>
     <div class="main">
         <div class="header">
             <ul id="nav">
-                <li><a href=""><b>Home</b></a></li>
-                <li><a href=""><b>About</b></a></li>
-                <li><a href=""><b>Portfolio</b></a></li>
-                <li><a href=""><b>News</b></a></li>
-                <li><a href="#"><b> 
+                <li><a href="#"><b>Home</b></a></li>
+                <li><a href="#about"><b>About</b></a></li>
+                <li><a href="#fortfolio"><b>Portfolio</b></a></li>
+                <li><a href="#news"><b>News</b></a></li>
+                <li><a href="#contact"><b> 
                     Contract
                 <i class="abc  ti-angle-down"></i>
                 </b>
@@ -27,12 +40,17 @@
             </ul>
         <a href=""><img src="../project1/style/img/Screenshot 2024-09-29 162939.png" width="100px"  alt=""></a>
         </div>
-        <div class="container">
-            <div class="home">
+        <div class="scroll">
+            <p><a href="#" style="text-decoration: none; color:black;">top _______</a></p>
+        </div>
+        <div class="containerr">
+            <div class="home" id="#">
                 <div class="content-home">
                     <div class="title">
-                            KEVINJR.
+                            KEVIN
+                            <span>JR.</span>
                     </div>
+                    
                     <H3>
                         Mobile App Developer
                     </H3>
@@ -42,42 +60,419 @@
                 </div>
                         
             </div>
-            <div class="about">
+            <div class="about" id="about">
                 <div class="about-container">
                     
                         <div class="man">
-
-
+                            <img src="../project1/style/img/about.png" alt="" center id="man" width="90%">
                         </div>
                         <div class="content">
+                            <div class="content-title">
+                                <span class="conten-span">ABOUT ME</span>
                             <h1>
                                 Creative web designer based in New York, USA
                             </h1>
+                            </div>
+                            
                             <p>
                                 I'm web designer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.
                             </p>
-                            <input type="button" class="dowload" value="Dowload">
+                            <input type="button" class="dowload" value="Dowload CV">
 
                         </div>
                 </div>
+                
+                
             </div>
-           
+            <div class="fortfolio" id="fortfolio"  >
+                <div class="fortfolio-container">
+                    <div class="fortfolio-header">
+                        <div class="fortfolio-header-left">
+                            <span class="fortfolio-span">fortfolio</span>
+                            <h2>Creative Portfolio
+                            </h2>
+                        </div>
+                        <div class="fortfolio-header-menu">
+                            <ul >
+                                <li><a href="#">All</a></li>
+                                <li><a href="#">Youtobe</a></li>
+                                <li><a href="#">Vimeo</a></li>
+                                <li><a href="#">Soundcloud</a></li>
+                                <li><a href="#">Popub</a></li>
+                                <li><a href="#">Detail</a></li>
+                            </ul>
+                        </div>
+                           
+                    </div>
+                    <div class="fortfolio-content">
+                        <div class="item"><a href="#fortfolio"  onclick="foron1()"><div class="fortfolio-img"><img src="../project1/style/img/fort1.png" alt="" width="100%"></div></a></div>
+                        <div class="item"><a href="#fortfolio"  onclick="foron2()"><div class="fortfolio-img"><img src="../project1/style/img/fort2.png" alt=""width="100%"></div></a></div>
+                        <div class="item"><a href="#fortfolio"  onclick="foron3()"><div class="fortfolio-img"><img src="../project1/style/img/fort3.png" alt=""width="100%"></div></a></div>
+                        <div class="item"><a href="#fortfolio"  onclick="foron4()" ><div class="fortfolio-img"><img src="../project1/style/img/fort4.png" alt=""width="100%"></div></a></div>
+                        <div class="item"><a href="#fortfolio"  onclick="foron5()"><div class="fortfolio-img"><img src="../project1/style/img/fort5.png" alt=""width="100%"></div></a></div>
+                        <div class="item"><a href="#fortfolio"  onclick="foron5()"><div class="fortfolio-img"><img src="../project1/style/img/fort6.png" alt=""width="100%"></div></a></div>
 
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <div class="fortfolio-modal" id="fortfolio-modal1" style="justify-content: center;
+    align-items: center;">
+                <a onclick="oroff1()" style="text-decoration: none; display: flex; justify-content: flex-end;" id="close-for"> <span  class="ti-close"></span></a>
+                <div class="Portfolio-content">
+                    <iframe width="900" height="506" src="https://www.youtube.com/embed/7e90gBu4pas" title="Working at Envato" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+            </div>
+
+
+            <div class="fortfolio-modal" id="fortfolio-modal2" style="justify-content: center;
+    align-items: center;">
+                <a onclick="oroff2()" style="text-decoration: none; display: flex; justify-content: flex-end;" id="close-for"> <span  class="ti-close"></span></a>
+                <div class="Portfolio-content">
+                    <iframe  width="900" height="506" title="vimeo-player" src="https://player.vimeo.com/video/337293658?h=73a8855fbc" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
+                </div>
+
+            </div>
+            <div class="fortfolio-modal" id="fortfolio-modal3" style="justify-content: center;
+            align-items: center;">
+                        <a onclick="oroff3()" style="text-decoration: none; display: flex; justify-content: flex-end;" id="close-for"> <span  class="ti-close"></span></a>
+                        <div class="Portfolio-content">
+                            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/492230454&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/bestnotesound" title="Royalty Free Music | Best Note Sound" target="_blank" style="color: #cccccc; text-decoration: none;">Royalty Free Music | Best Note Sound</a> · <a href="https://soundcloud.com/bestnotesound/be-happy-download-music-license-royalty-free-music-for-videos-background-youtube" title="Be Happy - Download Music License - Royalty Free Music For Videos Background Youtube" target="_blank" style="color: #cccccc; text-decoration: none;">Be Happy - Download Music License - Royalty Free Music For Videos Background Youtube</a></div>
+                        </div>
+        
+                    </div>
+
+
+
+
+
+
+            <div class="fortfolio-modal" id="fortfolio-modal4">
+                <a onclick="oroff4()" style="text-decoration: none; display: flex; justify-content: flex-end;" id="close-for"> <span  class="ti-close"></span></a>
+                <div class="Portfolio-content">
+                    
+                    
+                    <img src="../project1/style/img/fort4.png" >
+                </div>
+
+            </div>
+            <div class="fortfolio-modal" id="fortfolio-modal5">
+                <a onclick="oroff5()" style="text-decoration: none; display: flex; justify-content: flex-end;" id="close-for"> <span  class="ti-close"></span></a>
+                <div class="Portfolio-content">
+                    
+                    
+                    <img src="../project1/style/img/fort5.png" >
+                </div>
+
+            </div>
+            <div class="shane-secsion">
+                <div class="shane-secsion-container">  
+                    <div class="shane-trai">
+                        <div class="title">I have high skills in developing and programming</div>
+                        <div class="content">I am working on a professional, visually sophisticated and technologically proficient, responsive and multi-functional personal portfolio template Shane.</div>
+
+                    </div>
+                    <div class="shane-phai">
+                        <div class="thanh">
+                            <span style="display: flex;  justify-content: space-between;">
+                                <span class="name">Web Development</span>
+                                <span class="number">95%</span>
+                            </span>
+                            
+                            <div class="bar-cha">
+                                <div class="bar-con"style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="thanh">
+                            <span style="display: flex;  justify-content: space-between;">
+                                <span class="name">Brand Identity</span>
+                                <span class="number">80%</span>
+                            </span>
+                            <div class="bar-cha">
+                                <div class="bar-con"style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="thanh">
+                            <span style="display: flex;  justify-content: space-between;">
+                                <span class="name">Logo Design</span>
+                                <span class="number">90%</span>
+                            </span>
+                            <div class="bar-cha">
+                                <div class="bar-con" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                      
+
+                    </div>
+                </div>
+            </div>
+            <div class="shane-secsion1">
+                <!-- <img src="../project1/style/img/background.webp"  class="shane-img"  alt=""> -->
+                <span id="play-icon"><i class="ti-control-play"></i></span>
+                <h3>I am delivering beautiful digital products for my clients</h3>
+                <button  id="watch-video"><a href="https://youtu.be/R6plN3FvzFY?list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz" style="text-decoration: none;  color: #ffffff;">Watch Video </a></button>
+
+
+
+
+
+
+            </div>
+            <div class="shane-secsion2">
+
+            </div>
+            <div class="news" id="news">
+                <div class="news-container">
+                
+                        <div class="row-news">
+                            <span id="span-news">NEWS</span>
+                            <h3>Latest News</h3>
+                        </div>  
+        
+                    <div class="row-news1">
+                        <div class="item">
+                            <div class="img-opa">
+                                <a href="#new" id="img-opa" onclick="on()"><img src="../project1/style/img/news1.png" alt=""></a>
+                            </div>
+                            
+                            <p>Developers watch out for a these burnout burnout symptoms</p>
+                            <i>By Alex Watson 02 February 2022</i>
+                        </div>
+                       
+                        <div class="item" style="margin-left: 30px;">
+                            <div class="img-opa" >
+                                <a href="#new"id="img-opa" onclick="on2()"><img src="../project1/style/img/news2.png" alt=""></a>
+                            </div>
+                            <p>how to be appreciated for your hard a work as a developer</p>
+                            <i>By Alex Watson 02 February 2022</i>
+                        </div>
+                        <div class="item" style="margin-left: 30px;">
+                            <div class="img-opa">
+                                <a href="#new" id="img-opa" onclick="on3()"><img src="../project1/style/img/news3.png" alt=""></a>
+                            </div>
+                            <p>How designers and developers can collaborate better</p>
+                            <i>By Alex Watson 02 February 2022</i>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                
+
+
+
+
+            </div>
+            <div class="new-modal" id="new-modal">
+                <div class="modal-container">
+                    <a href="#news"><span class="span-new-close ti-close"  onclick="off()"></span></a>
+ 
+                        
+                    <div class="modal-container-content">
+                        <div class="modal-img">
+                            <img src="../project1/style/img/news1.png" style="width: 100%; ;" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>
+                                How to be appreciated for your hard work as a developer
+                            </h3>
+                            <p>
+                                Shane is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.
+                            </p>
+                            <p>
+                                In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.
+                            </p>
+                            <p>
+                                That’s why more companies are not only reevaluating their website’s design but also partnering with Kura, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.
+                            </p>
+    
+                        </div>
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+
+            <div class="new-modal" id="new-modal2">
+                <div class="modal-container">
+                    <a href="#news"><span class="span-new-close ti-close"  onclick="off2()"></span></a>
+                    <div class="modal-container-content">
+                        <div class="modal-img">
+                            <img src="../project1/style/img/news2.png" style="width: 100%; ;" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>
+                                How to be appreciated for your hard work as a developer
+                            </h3>
+                            <p>
+                                Shane is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.
+                            </p>
+                            <p>
+                                In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.
+                            </p>
+                            <p>
+                                That’s why more companies are not only reevaluating their website’s design but also partnering with Kura, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.
+                            </p>
+    
+                        </div>
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+            <div class="new-modal" id="new-modal3">
+                <div class="modal-container">
+                    <a href="#news"><span class="span-new-close ti-close"  onclick="off3()"></span></a>
+                    <div class="modal-container-content">
+                        <div class="modal-img">
+                            <img src="../project1/style/img/news3.png" style="width: 100%; ;" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>
+                                How to be appreciated for your hard work as a developer
+                            </h3>
+                            <p>
+                                Shane is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.
+                            </p>
+                            <p>
+                                In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.
+                            </p>
+                            <p>
+                                That’s why more companies are not only reevaluating their website’s design but also partnering with Kura, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.
+                            </p>
+    
+                        </div>
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+
+
+
+            
+            
+            <div class="contact" id="contact">
+                
+                <iframe  src="https://www.youtube.com/embed/l6JN5M12BbE" title="Big City View Free HD 1080 Video Background Loop 2/4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    <div class="title">Let's work together!</div>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                </iframe>
+                
+              
+
+            </div>
+            <div class="contact-modal ">
+                <div class="contact-modal-form ">
+                    <h1>Get in touch</h1>
+                    <div class="row-1">
+                        <div class="col-1">
+                            <table>
+                                <form action="" >
+                                    <tr>
+                                        <input type="text" name="name" placeholder="Name">
+                                    </tr>
+                                    <tr>
+                                        <input type="email"name="email" placeholder="Email">
+                                    </tr>
+                                    <tr>
+                                        <input type="text"name="Message" placeholder="Message">
+                                    </tr>
+                                    <tr>
+                                        <button type="submit">Send message</button>
+                                    </tr>
+        
+                                </form>
+                            </table>
+                        </div>
+                        
+                        <div class="col-2">
+                            <img src="../project1/style/img/anh-gai-xinh-deo-kinh-toc-ngang-vai.jpg" alt="">
+                        </div>
+
+                    </div>
+                    <div class="row-2">
+                        <div class="col">
+                            <h5>Ave Str. 12 New York</h5>
+                        </div>
+                        <div class="col">
+                            <h5>+77 033 442 55 57</h5>
+
+                        </div>
+                        <div class="col">
+
+                        </div>
+
+                    </div>
+                    
+
+
+
+                </div>
+
+
+            </div>
+
+            <!-- <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+              
+               
+                  <div class="modal-content ">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Modal Header</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>Some text in the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div> -->
+          
+            
+         
+           
+        
         </div>
+        
         <div class="footer">
             <p>© 2022 by Marketify. All rights reserved.</p>
 
         </div>
 
-
-
-
-
-
-
-
-
     </div>
     
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
