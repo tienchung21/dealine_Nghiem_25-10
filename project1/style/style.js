@@ -62,4 +62,12 @@
         document.getElementById("fortfolio-modal5").style.display = "none";
       }
 
+      function shaneon1() {
+        document.getElementById("shane-secsion1-modal").style.display = "flex";
+      }
+      
+      function oroff1() {
+        document.getElementById("shane-secsion1-modal").style.display = "none";
+      }
+
 

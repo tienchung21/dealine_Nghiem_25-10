@@ -3,9 +3,19 @@
     padding: 0px;
     box-sizing: border-box;
 }
-.main{
-    
+.main >img{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: -100;
 
+    
 }
 .header{
     height: 80px;
@@ -74,6 +84,7 @@ li a{
 .home{
     height: 100vh;
     position: relative;
+    background-color: #f2f2f2;
    
    
 }
@@ -117,10 +128,12 @@ li a{
     
     height: auto;
     position: relative;
+    
 }
 .about{
     height: auto;
     padding: 150px 0px;
+    background-color: #ffffff;
     
 }
 .about .about-container{
@@ -200,6 +213,9 @@ li a{
     background-color: rgba(255, 255, 255, 1);
     color: #000;
     transition: all 0.6s ease;
+}
+.fortfolio{
+    background-color: #f9f9f9;
 }
 
 
@@ -300,7 +316,7 @@ margin: 0 280px;
 }
 
 .Portfolio-content{
-    width: 100%;
+    max-width: 900px;
     max-height: 90vh;
     display: flex;
     justify-content: center;
@@ -311,16 +327,29 @@ margin: 0 280px;
     margin-bottom: 5px;
     margin-right: 3px;
     font-size: 20px;
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255,0.7);
+    width: 900px;
+    
     /* border-radius: 10% 30% 50% 70%; */
 
+}
+#close-for:hover{
+    color: #f2f2f2;
+    box-shadow: #f2f2f2;
 }
 .Portfolio-content > img{
     width: 100%;
     max-height: 100%;
 }
+.shane-secsion{
+    background-color: #ffffff;
+    padding: 160px 0px;
+}
+
+
+
 .shane-secsion-container{
-    margin: 250px;
+    
     min-height: 300px;
     padding: 40px;
 }
@@ -393,6 +422,7 @@ html{
         color: aliceblue;
         padding: 65px 0px 65px 0px;
         text-align: center;
+
         
 
 }
@@ -405,9 +435,10 @@ html{
     position: relative;
     justify-content: center;
     align-items: center;
-    background: url(../style/img/background.webp) ;
+    /* background: url(../style/img/background.webp) ; */
     background-size: cover;
     flex-direction: column;
+    background-color: transparent;
     
 
     
@@ -466,6 +497,10 @@ opacity: 0.9;
     background-size: cover;
     background-repeat: no-repeat;
     height: 600px;
+    background-color: #ffffff;
+}
+.news{
+    background-color: #ffffff;
 }
 .news-container{
     padding: 300px;
